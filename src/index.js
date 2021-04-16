@@ -3,6 +3,7 @@ const cors = require("cors");
 const helmet = require("helmet");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
+const logger = require("pino")({ prettyPrint: true });
 
 const app = express();
 
