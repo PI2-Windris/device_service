@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const updateCodeSchema = new Schema({
-    codeString = {
+    codeString: {
         type: mongoose.Schema.Types.String,
         required: true,
     }
