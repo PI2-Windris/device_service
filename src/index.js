@@ -22,7 +22,7 @@ mongoose.connection.once("open", () => {
 
 // Routers
 const updateCode = require("./routers/updateCode");
-app.use("/update", updateCode);
+app.use("/", updateCode);
 
 // Middleware
 app.use(morgan("dev"));

@@ -3,9 +3,14 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const updateCodeSchema = new Schema({
-    codeString: {
+    code: {
         type: mongoose.Schema.Types.String,
         required: true,
+    },
+    version: {
+        type: mongoose.Schema.Types.String,
+        required: true,
+        unique: true,
     }
 },{
     timestamps: true
